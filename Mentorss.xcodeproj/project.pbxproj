@@ -13,6 +13,7 @@
 		2C18E1EC272EEDC400EBB75B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C18E1EA272EEDC400EBB75B /* Main.storyboard */; };
 		2C18E1EE272EEDC500EBB75B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C18E1ED272EEDC500EBB75B /* Assets.xcassets */; };
 		2C18E1F1272EEDC500EBB75B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C18E1EF272EEDC500EBB75B /* LaunchScreen.storyboard */; };
+		B1A5334D501834F652CABF30 /* Pods_Mentorss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85B59AA2EBC89F314D06A7B /* Pods_Mentorss.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		2C18E1ED272EEDC500EBB75B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C18E1F0272EEDC500EBB75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C18E1F2272EEDC500EBB75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5525BC6FF7FDE3284B4D8136 /* Pods-Mentorss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mentorss.debug.xcconfig"; path = "Target Support Files/Pods-Mentorss/Pods-Mentorss.debug.xcconfig"; sourceTree = "<group>"; };
+		CE12A5265A323373E4ECB4C1 /* Pods-Mentorss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mentorss.release.xcconfig"; path = "Target Support Files/Pods-Mentorss/Pods-Mentorss.release.xcconfig"; sourceTree = "<group>"; };
+		F85B59AA2EBC89F314D06A7B /* Pods_Mentorss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mentorss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A5334D501834F652CABF30 /* Pods_Mentorss.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2C18E1E3272EEDC400EBB75B /* Mentorss */,
 				2C18E1E2272EEDC400EBB75B /* Products */,
+				9406F4A89BA97D6ED8280733 /* Pods */,
+				7354E73FF25312EB562EB872 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Mentorss;
 			sourceTree = "<group>";
 		};
+		7354E73FF25312EB562EB872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F85B59AA2EBC89F314D06A7B /* Pods_Mentorss.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9406F4A89BA97D6ED8280733 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5525BC6FF7FDE3284B4D8136 /* Pods-Mentorss.debug.xcconfig */,
+				CE12A5265A323373E4ECB4C1 /* Pods-Mentorss.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C18E1F5272EEDC500EBB75B /* Build configuration list for PBXNativeTarget "Mentorss" */;
 			buildPhases = (
+				AE358393C0EB801CA79CAEBA /* [CP] Check Pods Manifest.lock */,
 				2C18E1DD272EEDC400EBB75B /* Sources */,
 				2C18E1DE272EEDC400EBB75B /* Frameworks */,
 				2C18E1DF272EEDC400EBB75B /* Resources */,
+				144BC53CEFFDD9EB1AF2EC38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		144BC53CEFFDD9EB1AF2EC38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mentorss/Pods-Mentorss-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mentorss/Pods-Mentorss-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mentorss/Pods-Mentorss-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE358393C0EB801CA79CAEBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mentorss-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C18E1DD272EEDC400EBB75B /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		2C18E1F6272EEDC500EBB75B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5525BC6FF7FDE3284B4D8136 /* Pods-Mentorss.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		2C18E1F7272EEDC500EBB75B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE12A5265A323373E4ECB4C1 /* Pods-Mentorss.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
