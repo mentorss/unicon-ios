@@ -18,6 +18,8 @@
 		2C2E77482746A5990048DC10 /* SpoqaHanSansNeo-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E77432746A5990048DC10 /* SpoqaHanSansNeo-Medium.otf */; };
 		2C2E77502746A8E40048DC10 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E774F2746A8E40048DC10 /* Login.storyboard */; };
 		2C2E77542746ACA10048DC10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E77532746ACA10048DC10 /* LoginViewController.swift */; };
+		2C2E77572746BB810048DC10 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E77562746BB810048DC10 /* Home.storyboard */; };
+		2C2E77592746BC5E0048DC10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E77582746BC5E0048DC10 /* HomeViewController.swift */; };
 		2C5F44182735446E0024F138 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F44172735446E0024F138 /* UIViewController.swift */; };
 		2C5F441A273545670024F138 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F4419273545670024F138 /* String.swift */; };
 		B1A5334D501834F652CABF30 /* Pods_Mentorss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85B59AA2EBC89F314D06A7B /* Pods_Mentorss.framework */; };
@@ -37,6 +39,8 @@
 		2C2E77432746A5990048DC10 /* SpoqaHanSansNeo-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.otf"; sourceTree = "<group>"; };
 		2C2E774F2746A8E40048DC10 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		2C2E77532746ACA10048DC10 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2C2E77562746BB810048DC10 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		2C2E77582746BC5E0048DC10 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2C5F44172735446E0024F138 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		2C5F4419273545670024F138 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		5525BC6FF7FDE3284B4D8136 /* Pods-Mentorss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mentorss.debug.xcconfig"; path = "Target Support Files/Pods-Mentorss/Pods-Mentorss.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 			children = (
 				2C18E1EF272EEDC500EBB75B /* LaunchScreen.storyboard */,
 				2C2E774F2746A8E40048DC10 /* Login.storyboard */,
+				2C2E77562746BB810048DC10 /* Home.storyboard */,
 			);
 			path = StodyBoard;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				2C2E77522746AC940048DC10 /* Login */,
+				2C2E77552746BB720048DC10 /* Home */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +162,14 @@
 				2C2E77532746ACA10048DC10 /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		2C2E77552746BB720048DC10 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2C2E77582746BC5E0048DC10 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		2C5F441B273545AB0024F138 /* Extension */ = {
@@ -247,6 +261,7 @@
 				2C18E1F1272EEDC500EBB75B /* LaunchScreen.storyboard in Resources */,
 				2C2E77482746A5990048DC10 /* SpoqaHanSansNeo-Medium.otf in Resources */,
 				2C2E77462746A5990048DC10 /* SpoqaHanSansNeo-Light.otf in Resources */,
+				2C2E77572746BB810048DC10 /* Home.storyboard in Resources */,
 				2C2E77452746A5990048DC10 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				2C18E1EE272EEDC500EBB75B /* Assets.xcassets in Resources */,
 				2C2E77442746A5990048DC10 /* SpoqaHanSansNeo-Regular.otf in Resources */,
@@ -309,6 +324,7 @@
 				2C5F44182735446E0024F138 /* UIViewController.swift in Sources */,
 				2C2E77542746ACA10048DC10 /* LoginViewController.swift in Sources */,
 				2C18E1E7272EEDC400EBB75B /* SceneDelegate.swift in Sources */,
+				2C2E77592746BC5E0048DC10 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
