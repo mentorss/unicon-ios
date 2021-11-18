@@ -85,6 +85,8 @@
 				2C2E773E2746A5810048DC10 /* Font */,
 				2C5F441B273545AB0024F138 /* Extension */,
 				2C2E774A2746A8620048DC10 /* Model */,
+				2C2E775A2746C8A30048DC10 /* Repository */,
+				2C2E775B2746C8AD0048DC10 /* Service */,
 				2C2E774C2746A88E0048DC10 /* ViewModel */,
 				2C2E774B2746A8840048DC10 /* View */,
 				2C18E1ED272EEDC500EBB75B /* Assets.xcassets */,
@@ -170,6 +172,20 @@
 				2C2E77582746BC5E0048DC10 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		2C2E775A2746C8A30048DC10 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2C2E775B2746C8AD0048DC10 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		2C5F441B273545AB0024F138 /* Extension */ = {
