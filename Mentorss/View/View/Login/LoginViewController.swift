@@ -17,9 +17,9 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func loginButtonAction(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
-        let homeNav = storyBoard.instantiateViewController(identifier: "HomeNav")
-        self.changeRootViewController(homeNav)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let mainNav = storyBoard.instantiateViewController(identifier: "MainNav")
+        self.changeRootViewController(mainNav)
     }
     
 
