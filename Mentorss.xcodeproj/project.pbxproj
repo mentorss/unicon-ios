@@ -20,6 +20,14 @@
 		2C2E77542746ACA10048DC10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E77532746ACA10048DC10 /* LoginViewController.swift */; };
 		2C2E77572746BB810048DC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E77562746BB810048DC10 /* Main.storyboard */; };
 		2C2E77592746BC5E0048DC10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E77582746BC5E0048DC10 /* HomeViewController.swift */; };
+		2C2E776D2746F1CB0048DC10 /* MyMentoringCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E776C2746F1CB0048DC10 /* MyMentoringCollectionViewCell.swift */; };
+		2C2E776F2746F1D40048DC10 /* MyMentoringCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E776E2746F1D40048DC10 /* MyMentoringCollectionViewCell.xib */; };
+		2C2E77712746FCB50048DC10 /* RealtimeTwinkleMentorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E77702746FCB50048DC10 /* RealtimeTwinkleMentorCollectionViewCell.swift */; };
+		2C2E77732746FCBE0048DC10 /* RealtimeTwinkleMentorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E77722746FCBE0048DC10 /* RealtimeTwinkleMentorCollectionViewCell.xib */; };
+		2C2E7776274703EE0048DC10 /* MySuggestionMentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E7774274703EE0048DC10 /* MySuggestionMentorTableViewCell.swift */; };
+		2C2E7777274703EE0048DC10 /* MySuggestionMentorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E7775274703EE0048DC10 /* MySuggestionMentorTableViewCell.xib */; };
+		2C2E777A2747097C0048DC10 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E77792747097C0048DC10 /* CategoryCollectionViewCell.swift */; };
+		2C2E777C274709870048DC10 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E777B274709870048DC10 /* CategoryCollectionViewCell.xib */; };
 		2C5F44182735446E0024F138 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F44172735446E0024F138 /* UIViewController.swift */; };
 		2C5F441A273545670024F138 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F4419273545670024F138 /* String.swift */; };
 		B1A5334D501834F652CABF30 /* Pods_Mentorss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85B59AA2EBC89F314D06A7B /* Pods_Mentorss.framework */; };
@@ -41,6 +49,14 @@
 		2C2E77532746ACA10048DC10 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2C2E77562746BB810048DC10 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2C2E77582746BC5E0048DC10 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2C2E776C2746F1CB0048DC10 /* MyMentoringCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMentoringCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C2E776E2746F1D40048DC10 /* MyMentoringCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyMentoringCollectionViewCell.xib; sourceTree = "<group>"; };
+		2C2E77702746FCB50048DC10 /* RealtimeTwinkleMentorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeTwinkleMentorCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C2E77722746FCBE0048DC10 /* RealtimeTwinkleMentorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealtimeTwinkleMentorCollectionViewCell.xib; sourceTree = "<group>"; };
+		2C2E7774274703EE0048DC10 /* MySuggestionMentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySuggestionMentorTableViewCell.swift; sourceTree = "<group>"; };
+		2C2E7775274703EE0048DC10 /* MySuggestionMentorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySuggestionMentorTableViewCell.xib; sourceTree = "<group>"; };
+		2C2E77792747097C0048DC10 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C2E777B274709870048DC10 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		2C5F44172735446E0024F138 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		2C5F4419273545670024F138 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		5525BC6FF7FDE3284B4D8136 /* Pods-Mentorss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mentorss.debug.xcconfig"; path = "Target Support Files/Pods-Mentorss/Pods-Mentorss.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +186,13 @@
 			isa = PBXGroup;
 			children = (
 				2C2E77582746BC5E0048DC10 /* HomeViewController.swift */,
+				2C2E776C2746F1CB0048DC10 /* MyMentoringCollectionViewCell.swift */,
+				2C2E776E2746F1D40048DC10 /* MyMentoringCollectionViewCell.xib */,
+				2C2E77702746FCB50048DC10 /* RealtimeTwinkleMentorCollectionViewCell.swift */,
+				2C2E77722746FCBE0048DC10 /* RealtimeTwinkleMentorCollectionViewCell.xib */,
+				2C2E7774274703EE0048DC10 /* MySuggestionMentorTableViewCell.swift */,
+				2C2E7775274703EE0048DC10 /* MySuggestionMentorTableViewCell.xib */,
+				2C2E7778274709590048DC10 /* CategoryCollectionViewCell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -186,6 +209,15 @@
 			children = (
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		2C2E7778274709590048DC10 /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2C2E77792747097C0048DC10 /* CategoryCollectionViewCell.swift */,
+				2C2E777B274709870048DC10 /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		2C5F441B273545AB0024F138 /* Extension */ = {
@@ -275,11 +307,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C18E1F1272EEDC500EBB75B /* LaunchScreen.storyboard in Resources */,
+				2C2E77732746FCBE0048DC10 /* RealtimeTwinkleMentorCollectionViewCell.xib in Resources */,
 				2C2E77482746A5990048DC10 /* SpoqaHanSansNeo-Medium.otf in Resources */,
+				2C2E7777274703EE0048DC10 /* MySuggestionMentorTableViewCell.xib in Resources */,
 				2C2E77462746A5990048DC10 /* SpoqaHanSansNeo-Light.otf in Resources */,
 				2C2E77572746BB810048DC10 /* Main.storyboard in Resources */,
+				2C2E777C274709870048DC10 /* CategoryCollectionViewCell.xib in Resources */,
 				2C2E77452746A5990048DC10 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				2C18E1EE272EEDC500EBB75B /* Assets.xcassets in Resources */,
+				2C2E776F2746F1D40048DC10 /* MyMentoringCollectionViewCell.xib in Resources */,
 				2C2E77442746A5990048DC10 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				2C2E77472746A5990048DC10 /* SpoqaHanSansNeo-Thin.otf in Resources */,
 				2C2E77502746A8E40048DC10 /* Login.storyboard in Resources */,
@@ -340,6 +376,10 @@
 				2C5F44182735446E0024F138 /* UIViewController.swift in Sources */,
 				2C2E77542746ACA10048DC10 /* LoginViewController.swift in Sources */,
 				2C18E1E7272EEDC400EBB75B /* SceneDelegate.swift in Sources */,
+				2C2E77712746FCB50048DC10 /* RealtimeTwinkleMentorCollectionViewCell.swift in Sources */,
+				2C2E777A2747097C0048DC10 /* CategoryCollectionViewCell.swift in Sources */,
+				2C2E776D2746F1CB0048DC10 /* MyMentoringCollectionViewCell.swift in Sources */,
+				2C2E7776274703EE0048DC10 /* MySuggestionMentorTableViewCell.swift in Sources */,
 				2C2E77592746BC5E0048DC10 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

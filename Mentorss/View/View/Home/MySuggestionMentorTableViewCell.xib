@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SpoqaHanSansNeo-Bold.otf">
+            <string>SpoqaHanSansNeo-Bold</string>
+        </array>
+        <array key="SpoqaHanSansNeo-Regular.otf">
+            <string>SpoqaHanSansNeo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MySuggestionMentorTableViewCell" rowHeight="106" id="KGk-i7-Jjw" customClass="MySuggestionMentorTableViewCell" customModule="Mentorss" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImg1" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-cC-Hij">
+                        <rect key="frame" x="16" y="16" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ahv-cC-Hij" secondAttribute="height" id="NlZ-2x-OBV"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cXX-Vb-zGf">
+                        <rect key="frame" x="84" y="17" width="74" height="12"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purpleHorn" translatesAutoresizingMaskIntoConstraints="NO" id="cfs-24-uW6">
+                                <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="GbC-ZW-MWb"/>
+                                    <constraint firstAttribute="width" secondItem="cfs-24-uW6" secondAttribute="height" id="mzG-lH-JIt"/>
+                                    <constraint firstAttribute="height" constant="12" id="quy-eh-a1F"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김대식 멘토" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3o-v0-w2A">
+                                <rect key="frame" x="16" y="0.0" width="58" height="12"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="12"/>
+                                <color key="textColor" name="primary800"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네이버 여름인턴 준비 과정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qW-pv-MVe">
+                        <rect key="frame" x="85" y="36" width="230" height="25"/>
+                        <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="14"/>
+                        <color key="textColor" name="gray900"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="oBR-Qb-oYt">
+                        <rect key="frame" x="170" y="14" width="153" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kKF-jz-Kc8">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbO-du-roq">
+                        <rect key="frame" x="0.0" y="79" width="335" height="1"/>
+                        <color key="backgroundColor" name="gray200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Nxp-lb-e53"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ahv-cC-Hij" secondAttribute="bottom" constant="16" id="0Ry-ZU-50E"/>
+                    <constraint firstItem="4qW-pv-MVe" firstAttribute="top" secondItem="oBR-Qb-oYt" secondAttribute="bottom" constant="4" id="9nO-rG-sPf"/>
+                    <constraint firstItem="cXX-Vb-zGf" firstAttribute="leading" secondItem="ahv-cC-Hij" secondAttribute="trailing" constant="20" id="Fqj-BJ-uPO"/>
+                    <constraint firstItem="fbO-du-roq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IyJ-0N-Qog"/>
+                    <constraint firstItem="oBR-Qb-oYt" firstAttribute="leading" secondItem="cXX-Vb-zGf" secondAttribute="trailing" constant="12" id="LNK-Fn-OSB"/>
+                    <constraint firstItem="ahv-cC-Hij" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="a4S-nj-cKK"/>
+                    <constraint firstItem="cXX-Vb-zGf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="bIO-py-lMg"/>
+                    <constraint firstAttribute="trailing" secondItem="oBR-Qb-oYt" secondAttribute="trailing" constant="12" id="crY-GH-L4Z"/>
+                    <constraint firstAttribute="trailing" secondItem="4qW-pv-MVe" secondAttribute="trailing" constant="20" id="eue-Qn-65m"/>
+                    <constraint firstItem="oBR-Qb-oYt" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.225" id="f2w-Dn-22h"/>
+                    <constraint firstItem="oBR-Qb-oYt" firstAttribute="centerY" secondItem="cXX-Vb-zGf" secondAttribute="centerY" id="m1P-l1-qsl"/>
+                    <constraint firstItem="4qW-pv-MVe" firstAttribute="leading" secondItem="ahv-cC-Hij" secondAttribute="trailing" constant="21" id="qrD-Yi-Wwh"/>
+                    <constraint firstAttribute="trailing" secondItem="fbO-du-roq" secondAttribute="trailing" id="tdB-dk-MeF"/>
+                    <constraint firstItem="fbO-du-roq" firstAttribute="top" secondItem="4qW-pv-MVe" secondAttribute="bottom" constant="18" id="vKc-zH-Vfz"/>
+                    <constraint firstAttribute="bottom" secondItem="fbO-du-roq" secondAttribute="bottom" id="wGN-PB-Xnf"/>
+                    <constraint firstItem="ahv-cC-Hij" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="xn9-BK-acf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryCollectionView" destination="oBR-Qb-oYt" id="GbX-Ov-Yvj"/>
+                <outlet property="descriptionLabel" destination="4qW-pv-MVe" id="uKM-Ad-2iU"/>
+                <outlet property="mentorHornImage" destination="cfs-24-uW6" id="BF0-c3-o8z"/>
+                <outlet property="mentorNameLabel" destination="Q3o-v0-w2A" id="xXD-p7-SXy"/>
+                <outlet property="mentorProfileImage" destination="ahv-cC-Hij" id="bSp-R7-P5G"/>
+            </connections>
+            <point key="canvasLocation" x="170.28985507246378" y="130.58035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="purpleHorn" width="12" height="12"/>
+        <image name="testImg1" width="64" height="64"/>
+        <namedColor name="gray200">
+            <color red="0.90588235294117647" green="0.90196078431372551" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray900">
+            <color red="0.054901960784313725" green="0.047058823529411764" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary800">
+            <color red="0.20784313725490197" green="0.16078431372549021" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
