@@ -30,6 +30,21 @@ class HomeViewController: UIViewController {
         configUI()
     }
     
+    // 홈화면 UI 함수
+    func configUI() {
+        findMyOwnMentorButton.layer.cornerRadius = 4
+        findMyOwnMentorButton.layer.shadowColor = UIColor(named: "primary800")?.cgColor
+        findMyOwnMentorButton.layer.shadowOffset = CGSize(width: 0, height: 1)
+        findMyOwnMentorButton.layer.shadowOpacity = 0.2
+        
+        
+        challengeMentorButton.layer.cornerRadius = 4
+        challengeMentorButton.layer.shadowColor = UIColor(named: "primary800")?.cgColor
+        challengeMentorButton.layer.shadowOffset = CGSize(width: 0, height: 1)
+        challengeMentorButton.layer.shadowOpacity = 0.2
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,21 +73,7 @@ class HomeViewController: UIViewController {
     }
     
     
-    // 홈화면 UI 함수
-    func configUI() {
-        findMyOwnMentorButton.layer.cornerRadius = 4
-        findMyOwnMentorButton.layer.shadowColor = UIColor(named: "primary800")?.cgColor
-        findMyOwnMentorButton.layer.shadowOffset = CGSize(width: 0, height: 1)
-        findMyOwnMentorButton.layer.shadowOpacity = 0.2
-        
-        
-        challengeMentorButton.layer.cornerRadius = 4
-        challengeMentorButton.layer.shadowColor = UIColor(named: "primary800")?.cgColor
-        challengeMentorButton.layer.shadowOffset = CGSize(width: 0, height: 1)
-        challengeMentorButton.layer.shadowOpacity = 0.2
-        
-        
-    }
+
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
