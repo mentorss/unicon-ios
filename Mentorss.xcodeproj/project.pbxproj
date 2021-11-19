@@ -10,6 +10,13 @@
 		2C131BF32747F94A00F71FCD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C131BF22747F94A00F71FCD /* SearchViewController.swift */; };
 		2C131BF52747FA6700F71FCD /* RecommandKeywordCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C131BF42747FA6700F71FCD /* RecommandKeywordCollectionView.swift */; };
 		2C131BF72747FA6C00F71FCD /* RecommandKeywordCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C131BF62747FA6C00F71FCD /* RecommandKeywordCollectionView.xib */; };
+		2C131BF9274803FE00F71FCD /* Mentor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C131BF8274803FD00F71FCD /* Mentor.storyboard */; };
+		2C131BFC27480BA600F71FCD /* MentorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C131BFB27480BA600F71FCD /* MentorProfileViewController.swift */; };
+		2C131C242748178800F71FCD /* InteractivePopRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C131C232748178800F71FCD /* InteractivePopRecognizer.swift */; };
+		2C131C2627481AC000F71FCD /* kViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C131C2527481AC000F71FCD /* kViewController.swift */; };
+		2C131C28274827E200F71FCD /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C131C27274827E100F71FCD /* MenuCell.swift */; };
+		2C131C2A2748280C00F71FCD /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C131C292748280C00F71FCD /* MenuCell.xib */; };
+		2C131C2C274828C200F71FCD /* FocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C131C2B274828C200F71FCD /* FocusView.xib */; };
 		2C18E1E5272EEDC400EBB75B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18E1E4272EEDC400EBB75B /* AppDelegate.swift */; };
 		2C18E1E7272EEDC400EBB75B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18E1E6272EEDC400EBB75B /* SceneDelegate.swift */; };
 		2C18E1EE272EEDC500EBB75B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C18E1ED272EEDC500EBB75B /* Assets.xcassets */; };
@@ -40,6 +47,13 @@
 		2C131BF22747F94A00F71FCD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2C131BF42747FA6700F71FCD /* RecommandKeywordCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandKeywordCollectionView.swift; sourceTree = "<group>"; };
 		2C131BF62747FA6C00F71FCD /* RecommandKeywordCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommandKeywordCollectionView.xib; sourceTree = "<group>"; };
+		2C131BF8274803FD00F71FCD /* Mentor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mentor.storyboard; sourceTree = "<group>"; };
+		2C131BFB27480BA600F71FCD /* MentorProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorProfileViewController.swift; sourceTree = "<group>"; };
+		2C131C232748178800F71FCD /* InteractivePopRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractivePopRecognizer.swift; sourceTree = "<group>"; };
+		2C131C2527481AC000F71FCD /* kViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kViewController.swift; sourceTree = "<group>"; };
+		2C131C27274827E100F71FCD /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		2C131C292748280C00F71FCD /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		2C131C2B274828C200F71FCD /* FocusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusView.xib; sourceTree = "<group>"; };
 		2C18E1E1272EEDC400EBB75B /* Mentorss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mentorss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C18E1E4272EEDC400EBB75B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C18E1E6272EEDC400EBB75B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +104,17 @@
 				2C131BF62747FA6C00F71FCD /* RecommandKeywordCollectionView.xib */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		2C131BFA27480B8900F71FCD /* Mentor */ = {
+			isa = PBXGroup;
+			children = (
+				2C131BFB27480BA600F71FCD /* MentorProfileViewController.swift */,
+				2C131C27274827E100F71FCD /* MenuCell.swift */,
+				2C131C292748280C00F71FCD /* MenuCell.xib */,
+				2C131C2B274828C200F71FCD /* FocusView.xib */,
+			);
+			path = Mentor;
 			sourceTree = "<group>";
 		};
 		2C18E1D8272EEDC400EBB75B = {
@@ -177,6 +202,7 @@
 				2C18E1EF272EEDC500EBB75B /* LaunchScreen.storyboard */,
 				2C2E774F2746A8E40048DC10 /* Login.storyboard */,
 				2C2E77562746BB810048DC10 /* Main.storyboard */,
+				2C131BF8274803FD00F71FCD /* Mentor.storyboard */,
 			);
 			path = StodyBoard;
 			sourceTree = "<group>";
@@ -187,6 +213,7 @@
 				2C2E77522746AC940048DC10 /* Login */,
 				2C2E77552746BB720048DC10 /* Home */,
 				2C131BF12747F92C00F71FCD /* Search */,
+				2C131BFA27480B8900F71FCD /* Mentor */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				2C2E77582746BC5E0048DC10 /* HomeViewController.swift */,
+				2C131C2527481AC000F71FCD /* kViewController.swift */,
 				2C2E776C2746F1CB0048DC10 /* MyMentoringCollectionViewCell.swift */,
 				2C2E776E2746F1D40048DC10 /* MyMentoringCollectionViewCell.xib */,
 				2C2E77702746FCB50048DC10 /* RealtimeTwinkleMentorCollectionViewCell.swift */,
@@ -242,6 +270,7 @@
 			children = (
 				2C5F44172735446E0024F138 /* UIViewController.swift */,
 				2C5F4419273545670024F138 /* String.swift */,
+				2C131C232748178800F71FCD /* InteractivePopRecognizer.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -325,6 +354,8 @@
 			files = (
 				2C18E1F1272EEDC500EBB75B /* LaunchScreen.storyboard in Resources */,
 				2C2E77732746FCBE0048DC10 /* RealtimeTwinkleMentorCollectionViewCell.xib in Resources */,
+				2C131C2A2748280C00F71FCD /* MenuCell.xib in Resources */,
+				2C131BF9274803FE00F71FCD /* Mentor.storyboard in Resources */,
 				2C2E77482746A5990048DC10 /* SpoqaHanSansNeo-Medium.otf in Resources */,
 				2C2E7777274703EE0048DC10 /* MySuggestionMentorTableViewCell.xib in Resources */,
 				2C2E77462746A5990048DC10 /* SpoqaHanSansNeo-Light.otf in Resources */,
@@ -336,6 +367,7 @@
 				2C2E77442746A5990048DC10 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				2C2E77472746A5990048DC10 /* SpoqaHanSansNeo-Thin.otf in Resources */,
 				2C2E77502746A8E40048DC10 /* Login.storyboard in Resources */,
+				2C131C2C274828C200F71FCD /* FocusView.xib in Resources */,
 				2C131BF72747FA6C00F71FCD /* RecommandKeywordCollectionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,13 +425,17 @@
 				2C131BF52747FA6700F71FCD /* RecommandKeywordCollectionView.swift in Sources */,
 				2C131BF32747F94A00F71FCD /* SearchViewController.swift in Sources */,
 				2C5F441A273545670024F138 /* String.swift in Sources */,
+				2C131C242748178800F71FCD /* InteractivePopRecognizer.swift in Sources */,
 				2C5F44182735446E0024F138 /* UIViewController.swift in Sources */,
 				2C2E77542746ACA10048DC10 /* LoginViewController.swift in Sources */,
+				2C131C2627481AC000F71FCD /* kViewController.swift in Sources */,
 				2C18E1E7272EEDC400EBB75B /* SceneDelegate.swift in Sources */,
+				2C131BFC27480BA600F71FCD /* MentorProfileViewController.swift in Sources */,
 				2C2E77712746FCB50048DC10 /* RealtimeTwinkleMentorCollectionViewCell.swift in Sources */,
 				2C2E777A2747097C0048DC10 /* CategoryCollectionViewCell.swift in Sources */,
 				2C2E776D2746F1CB0048DC10 /* MyMentoringCollectionViewCell.swift in Sources */,
 				2C2E7776274703EE0048DC10 /* MySuggestionMentorTableViewCell.swift in Sources */,
+				2C131C28274827E200F71FCD /* MenuCell.swift in Sources */,
 				2C2E77592746BC5E0048DC10 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

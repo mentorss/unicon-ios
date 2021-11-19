@@ -38,6 +38,8 @@ class SearchViewController: UIViewController {
         recommandKeywordCollectionView.register(UINib(nibName: "RecommandKeywordCollectionView", bundle: nil), forCellWithReuseIdentifier: "RecommandKeywordCollectionView")
     }
     
+    
+
 
 }
 

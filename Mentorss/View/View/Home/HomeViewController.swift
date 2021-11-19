@@ -11,18 +11,14 @@ class HomeViewController: UIViewController {
 
     
     @IBOutlet weak var showDetailStackView: UIStackView!
-    
     @IBOutlet weak var findMyOwnMentorButton: UIButton!
-    
-    
     @IBOutlet weak var myMentoringCollectionView: UICollectionView!
-    
-    
     @IBOutlet weak var realtimeTwinkleMentorCollectionView: UICollectionView!
     @IBOutlet weak var challengeMentorButton: UIButton!
-    
-    
     @IBOutlet weak var mySuggestionMentorTableView: UITableView!
+    
+    
+    
     
     
     override func loadView() {
@@ -48,9 +44,15 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         setCollectionView()
         setTableView()
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
+    
+
     
     func setCollectionView() {
         
@@ -74,6 +76,8 @@ class HomeViewController: UIViewController {
     
     
 
+    
+
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -95,8 +99,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
             
         }
-        
-       
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyBoard = UIStoryboard(name: "Mentor", bundle: nil)
+        let mainPresentVC = storyBoard.instantiateViewController(withIdentifier: "MentorProfileViewController") as! MentorProfileViewController
+        self.navigationController?.pushViewController(mainPresentVC, animated: true)
     }
 }
 
