@@ -45,7 +45,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        print("change git repo name test")
         
         setCollectionView()
         setTableView()
