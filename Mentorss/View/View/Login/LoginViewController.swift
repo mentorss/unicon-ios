@@ -17,9 +17,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        viewModel.loginView = self
         
+        viewModel.loginView = self
+        viewModelMethod()
     }
     
     
