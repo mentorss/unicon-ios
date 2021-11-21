@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SpoqaHanSansNeo-Bold.otf">
+            <string>SpoqaHanSansNeo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileTabsCollectionReusableView" id="4dM-Ao-rfn" customClass="ProfileTabsCollectionReusableView" customModule="Mentorss" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="613" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teX-Zt-tMy">
+                    <rect key="frame" x="184" y="46" width="143.5" height="59"/>
+                    <color key="backgroundColor" name="grayWhite"/>
+                    <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="리뷰 23">
+                        <color key="titleColor" name="gray300"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRu-0o-lLH">
+                    <rect key="frame" x="0.0" y="107" width="613" height="1"/>
+                    <color key="backgroundColor" name="gray200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="feE-uq-gPx"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TkW-ZQ-3xB">
+                    <rect key="frame" x="20" y="105" width="144" height="2"/>
+                    <color key="backgroundColor" name="primary700"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="O5G-RC-gUy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXK-TB-wuB">
+                    <rect key="frame" x="184" y="105" width="143.5" height="2"/>
+                    <color key="backgroundColor" name="primary700"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="7TT-Y0-Fni"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzD-Uu-eNx">
+                    <rect key="frame" x="20" y="46" width="144" height="59"/>
+                    <color key="backgroundColor" name="grayWhite"/>
+                    <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="소개">
+                        <color key="titleColor" name="primary800"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="6fS-CS-HyR"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="rXK-TB-wuB" firstAttribute="centerX" secondItem="teX-Zt-tMy" secondAttribute="centerX" id="4B7-Xf-sSA"/>
+                <constraint firstAttribute="trailing" secondItem="eRu-0o-lLH" secondAttribute="trailing" id="CHA-Oo-sKh"/>
+                <constraint firstItem="TkW-ZQ-3xB" firstAttribute="width" secondItem="VzD-Uu-eNx" secondAttribute="width" id="CbT-Op-hZA"/>
+                <constraint firstItem="eRu-0o-lLH" firstAttribute="leading" secondItem="4dM-Ao-rfn" secondAttribute="leading" id="PP8-XO-KYq"/>
+                <constraint firstItem="teX-Zt-tMy" firstAttribute="top" secondItem="6fS-CS-HyR" secondAttribute="top" constant="2" id="Rz8-DI-t6B"/>
+                <constraint firstItem="VzD-Uu-eNx" firstAttribute="top" secondItem="6fS-CS-HyR" secondAttribute="top" constant="2" id="SU0-Ef-t6M"/>
+                <constraint firstItem="rXK-TB-wuB" firstAttribute="width" secondItem="teX-Zt-tMy" secondAttribute="width" id="SYo-wO-RvY"/>
+                <constraint firstItem="TkW-ZQ-3xB" firstAttribute="top" secondItem="VzD-Uu-eNx" secondAttribute="bottom" id="Vq7-Ig-rdo"/>
+                <constraint firstItem="eRu-0o-lLH" firstAttribute="top" secondItem="rXK-TB-wuB" secondAttribute="bottom" id="YDu-4k-Ytp"/>
+                <constraint firstItem="eRu-0o-lLH" firstAttribute="top" secondItem="TkW-ZQ-3xB" secondAttribute="bottom" id="ZAO-OU-hSY"/>
+                <constraint firstItem="VzD-Uu-eNx" firstAttribute="leading" secondItem="6fS-CS-HyR" secondAttribute="leading" constant="20" id="btu-vQ-ISh"/>
+                <constraint firstItem="rXK-TB-wuB" firstAttribute="top" secondItem="teX-Zt-tMy" secondAttribute="bottom" id="hzL-3O-hRM"/>
+                <constraint firstItem="TkW-ZQ-3xB" firstAttribute="centerX" secondItem="VzD-Uu-eNx" secondAttribute="centerX" id="kG6-fe-IPg"/>
+                <constraint firstItem="teX-Zt-tMy" firstAttribute="width" secondItem="4dM-Ao-rfn" secondAttribute="width" multiplier="88:375" id="oRq-Hy-79A"/>
+                <constraint firstItem="VzD-Uu-eNx" firstAttribute="width" secondItem="4dM-Ao-rfn" secondAttribute="width" multiplier="88:375" id="saJ-ZR-Kzl"/>
+                <constraint firstAttribute="bottom" secondItem="eRu-0o-lLH" secondAttribute="bottom" id="tjK-9T-ngA"/>
+                <constraint firstItem="teX-Zt-tMy" firstAttribute="leading" secondItem="VzD-Uu-eNx" secondAttribute="trailing" constant="20" id="xzU-yg-xvH"/>
+            </constraints>
+            <connections>
+                <outlet property="introBottomLineView" destination="TkW-ZQ-3xB" id="4Wn-ma-7P2"/>
+                <outlet property="introButton" destination="VzD-Uu-eNx" id="hUP-27-Y32"/>
+                <outlet property="reviewBottomLineView" destination="rXK-TB-wuB" id="6N7-wg-0Ns"/>
+                <outlet property="reviewButton" destination="teX-Zt-tMy" id="xMr-QC-YHb"/>
+            </connections>
+            <point key="canvasLocation" x="3.6231884057971016" y="229.6875"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="gray200">
+            <color red="0.90588235294117647" green="0.90196078431372551" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray300">
+            <color red="0.78431372549019607" green="0.77647058823529413" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary700">
+            <color red="0.30196078431372547" green="0.24313725490196078" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary800">
+            <color red="0.20784313725490197" green="0.16078431372549021" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

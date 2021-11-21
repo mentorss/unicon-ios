@@ -10,44 +10,24 @@ import UIKit
 class MentorProfileViewController: UIViewController {
     
     
-    @IBOutlet weak var mentorProfileBaseView: MentorProfileView!
+    
+    @IBOutlet weak var mentorProfileCollectionView: UICollectionView!
     @IBOutlet weak var mainTitleLabel: UILabel!
-    @IBOutlet weak var mentorProfileImage: UIImageView!
-    @IBOutlet weak var mentorHornImage: UIImageView!
-    @IBOutlet weak var mentorNameLabel: UILabel!
-    @IBOutlet weak var mentorTitleLabel: UILabel!
-    @IBOutlet weak var totalMentoringCountLabel: UILabel!
-    @IBOutlet weak var satisfactionPercentLabel: UILabel!
-    @IBOutlet weak var mentoringSubscriptionButton: UIButton!
 
-    
-    override func loadView() {
-        super.loadView()
-        configUI()
-        
-    }
-    
-    func configUI() {
-        mentorProfileImage.layer.cornerRadius = mentorProfileImage.frame.height / 2
-        mentoringSubscriptionButton.layer.cornerRadius = 4
-        
-    }
-    
-
-    
+    lazy var profileInfoHeaderCollectionReusableView: ProfileInfoHeaderCollectionReusableView = ProfileInfoHeaderCollectionReusableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        mentorProfileBaseView.scrollViewDidScroll(view: mentorProfileBaseView)
-        
+        setCollectionView()
+        addEdgePanGesture()
+       
+        profileInfoHeaderCollectionReusableView.mainView = self
+    }
+    
+    func addEdgePanGesture() {
         let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(leftEdgeSwipe))
         edgePan.edges = .left
         self.view.addGestureRecognizer(edgePan)
-
-     
-        
-        // Do any additional setup after loading the view.
     }
     
     @objc func leftEdgeSwipe(_ recognizer: UIScreenEdgePanGestureRecognizer) {
@@ -56,10 +36,18 @@ class MentorProfileViewController: UIViewController {
        }
     }
     
-    
-    
-    
-    
+    func setCollectionView() {
+        mentorProfileCollectionView.delegate = self
+        mentorProfileCollectionView.dataSource = self
+        mentorProfileCollectionView.register(UINib(nibName: "MentorProfileInfoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MentorProfileInfoCollectionViewCell")
+        mentorProfileCollectionView.register(UINib(nibName: "ProfileInfoHeaderCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader , withReuseIdentifier: "ProfileInfoHeaderCollectionReusableView")
+        mentorProfileCollectionView.register(UINib(nibName: "ProfileTabsCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader , withReuseIdentifier: "ProfileTabsCollectionReusableView")
+        
+        let layout = mentorProfileCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.sectionHeadersPinToVisibleBounds = true
+        
+        
+    }
     
     @IBAction func backButtonAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -68,3 +56,73 @@ class MentorProfileViewController: UIViewController {
 
 }
 
+
+extension MentorProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        if section == 0 {
+            return 0
+        }
+        
+        return 100
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MentorProfileInfoCollectionViewCell", for: indexPath) as! MentorProfileInfoCollectionViewCell
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        guard kind == UICollectionView.elementKindSectionHeader else {
+            return UICollectionReusableView()
+        }
+        
+        if indexPath.section == 1 {
+            let tabControllHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ProfileTabsCollectionReusableView", for: indexPath) as! ProfileTabsCollectionReusableView
+            
+            tabControllHeader.delegate = self
+            
+            return tabControllHeader
+        }
+        
+        let profileHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ProfileInfoHeaderCollectionReusableView", for: indexPath) as! ProfileInfoHeaderCollectionReusableView
+        
+        return profileHeader
+    }
+    
+    
+    
+}
+
+extension MentorProfileViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if section == 0 {
+      
+            return CGSize(width: self.mentorProfileCollectionView.frame.width, height: self.mentorProfileCollectionView.frame.width * (207.5 / 375))
+            
+            //return CGSize(width: self.mentorProfileCollectionView.frame.width, height: profileInfoHeaderCollectionReusableView.height)
+        }
+        return CGSize(width: self.mentorProfileCollectionView.frame.width, height: self.mentorProfileCollectionView.frame.width * 0.128)
+    }
+}
+
+extension MentorProfileViewController: ProfileTabsCollectionReusableViewDelegate {
+    func didTapGridButtonTab() {
+        print("didTapGridButtonTab")
+        
+        
+    }
+    
+    func didTapTagButtonTab() {
+        print("didTapTagButtonTab")
+        
+    }
+    
+    
+}
